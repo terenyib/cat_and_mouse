@@ -127,3 +127,12 @@ Given a string "m..CD" and jump count 2
 When I check if cat can catch a mouse
 Then the result is 'Caught!'
 
+### US-7
+As a cat
+I want to check if I can catch a mouse when there is a dog between me and the mouse, I can't even jump to the dog
+So that I will know that I can't catch the mouse
+
+#### UAT-7.1
+Given a string "C...Dm" and jump count 2
+When I check if cat can catch a mouse
+Then the result is 'Escaped!'

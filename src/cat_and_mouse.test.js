@@ -57,3 +57,8 @@ describe('US-6', () => {
     expect(catAndMouse("m..CD", 2)).toBe("Caught!");
   });
 });
+describe('US-7', () => {
+  it('Given the string x="C...Dm", jump j=2 When I check if I can catch a mouse Then the result is "Escaped!"', () => {
+    expect(catAndMouse("C...Dm", 2)).toBe("Escaped!");
+  });
+});
