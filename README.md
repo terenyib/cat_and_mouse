@@ -55,7 +55,7 @@ Then the result is 'Caught!'
 ### US-3
 As a cat
 I want to check if I can catch a mouse when there's no dog, and mouse is one jump ahead
-So that I will know that I can catch a mouse
+So that I will know that I can catch a mouse or not
 
 #### UAT-3.1
 Given a string "C.m" and jump count 0
@@ -71,3 +71,28 @@ Then the result is 'Caught!'
 Given a string "m.C" and jump count 1
 When I check if cat can catch a mouse
 Then the result is 'Caught!'
+
+### US-4
+As a cat
+I want to check if I can catch a mouse when there's no dog, and mouse is two jumps ahead
+So that I will know that I can catch a mouse or not
+
+#### UAT-4.1
+Given a string "C..m" and jump count 2
+When I check if cat can catch a mouse
+Then the result is 'Caught!'
+
+#### UAT-4.2
+Given a string "C..m" and jump count 1
+When I check if cat can catch a mouse
+Then the result is 'Escaped!'
+
+#### UAT-4.3
+Given a string "C..m" and jump count 3
+When I check if cat can catch a mouse
+Then the result is 'Caught!'
+
+#### UAT-4.4
+Given a string "m..C" and jump count 0
+When I check if cat can catch a mouse
+Then the result is 'Escaped!'
