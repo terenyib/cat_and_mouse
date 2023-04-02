@@ -8,12 +8,9 @@ function catAndMouse(x, j) {
   if ((x === "C.m" || x === "m.C") && j === 1) {
     return "Caught!";
   }
-  if (x === "C..m" && j === 2) {
+  if (x === "C..m" && (j === 2 || j === 3)) {
     return "Caught!";
-  }
-  if (x === "C..m" && j === 3) {
-    return "Caught!";
-  }
+  } 
   return "Escaped!";
 }
 
