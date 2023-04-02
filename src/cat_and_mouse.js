@@ -3,10 +3,15 @@ function catAndMouse(x, j) {
     return "boring without all three";
   }
   if (x.indexOf("C") >  x.indexOf("m")) {
-    return x.indexOf("C") - x.indexOf("m") <= j + 1 ? "Caught!" : "Escaped!";
+    if (x.indexOf("C") - x.indexOf("m") <= j + 1) {
+      return "Caught!"
+    }    
   } else {
-    return x.indexOf("m") - x.indexOf("C") <= j + 1 ? "Caught!" : "Escaped!";
-  } 
+    if (x.indexOf("m") - x.indexOf("C") <= j + 1) {
+      return "Caught!"
+    }
+  }
+  return "Escaped!";
 }
 
 module.exports = catAndMouse;
