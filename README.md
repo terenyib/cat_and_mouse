@@ -83,14 +83,14 @@ When I check if cat can catch a mouse
 Then the result is 'Caught!'
 
 #### UAT-4.2
-Given a string "C..m" and jump count 1
-When I check if cat can catch a mouse
-Then the result is 'Escaped!'
-
-#### UAT-4.3
 Given a string "C..m" and jump count 3
 When I check if cat can catch a mouse
 Then the result is 'Caught!'
+
+#### UAT-4.3
+Given a string "C..m" and jump count 1
+When I check if cat can catch a mouse
+Then the result is 'Escaped!'
 
 #### UAT-4.4
 Given a string "m..C" and jump count 0
