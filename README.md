@@ -39,61 +39,61 @@ Then the result is 'boring without all three'
 
 ### US-2
 As a cat
-I want to check if I can catch a mouse when there's no dog, and mouse is next to me
+I want to check if I can catch a mouse when the dog is out of the way, and mouse is next to me
 So that I will know that I can catch a mouse
 
 #### UAT-2.1
-Given a string "Cm" and jump count 0
+Given a string "CmD" and jump count 0
 When I check if cat can catch a mouse
 Then the result is 'Caught!'
 
 #### UAT-2.2
-Given a string "mC" and jump count 1
+Given a string "mCD" and jump count 1
 When I check if cat can catch a mouse
 Then the result is 'Caught!'
 
 ### US-3
 As a cat
-I want to check if I can catch a mouse when there's no dog, and mouse is one jump ahead
+I want to check if I can catch a mouse when the dog is out of the way, and mouse is one jump ahead
 So that I will know that I can catch a mouse or not
 
 #### UAT-3.1
-Given a string "C.m" and jump count 0
+Given a string "C.mD" and jump count 0
 When I check if cat can catch a mouse
 Then the result is 'Escaped!'
 
 #### UAT-3.2
-Given a string "C.m" and jump count 1
+Given a string "C.mD" and jump count 1
 When I check if cat can catch a mouse
 Then the result is 'Caught!'
 
 #### UAT-3.3
-Given a string "m.C" and jump count 1
+Given a string "m.CD" and jump count 1
 When I check if cat can catch a mouse
 Then the result is 'Caught!'
 
 ### US-4
 As a cat
-I want to check if I can catch a mouse when there's no dog, and mouse is two jumps ahead
+I want to check if I can catch a mouse when the dog is out of the way, and mouse is two jumps ahead
 So that I will know that I can catch a mouse or not
 
 #### UAT-4.1
-Given a string "C..m" and jump count 2
+Given a string "C..mD" and jump count 2
 When I check if cat can catch a mouse
 Then the result is 'Caught!'
 
 #### UAT-4.2
-Given a string "C..m" and jump count 3
+Given a string "C..mD" and jump count 3
 When I check if cat can catch a mouse
 Then the result is 'Caught!'
 
 #### UAT-4.3
-Given a string "C..m" and jump count 1
+Given a string "C..mD" and jump count 1
 When I check if cat can catch a mouse
 Then the result is 'Escaped!'
 
 #### UAT-4.4
-Given a string "m..C" and jump count 0
+Given a string "m..CD" and jump count 0
 When I check if cat can catch a mouse
 Then the result is 'Escaped!'
 
@@ -114,7 +114,7 @@ Then the result is 'Protected!'
 
 ### US-6
 As a cat
-I want to check if I can catch a mouse when there is no dog between us, and mouse is two jumps ahead
+I want to check if I can catch a mouse when the dog is out of the way, and mouse is two jumps ahead
 So that I will know that I can catch the mouse
 
 #### UAT-6.1
@@ -129,7 +129,7 @@ Then the result is 'Caught!'
 
 ### US-7
 As a cat
-I want to check if I can catch a mouse when there is a dog between me and the mouse, I can't even jump to the dog
+I want to check if I can catch a mouse when there is a dog between me and the mouse, and I can't even jump to the dog
 So that I will know that I can't catch the mouse
 
 #### UAT-7.1

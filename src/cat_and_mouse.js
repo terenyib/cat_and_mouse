@@ -2,7 +2,7 @@ function catAndMouse(x, j) {
   let cat = x.indexOf("C");
   let mouse = x.indexOf("m");
   let dog = x.indexOf("D");
-  if (cat < 0 && mouse < 0 && dog < 0) {
+  if (cat < 0 || mouse < 0 || dog < 0) {
     return "boring without all three";
   }
   if ((dog > cat && dog < mouse) || (dog < cat && dog > mouse)) {
