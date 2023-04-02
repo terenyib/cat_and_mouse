@@ -5,6 +5,7 @@ function catAndMouse(x, j) {
   if (x === "Cm" || x === "mC") {
     return "Caught!";
   }
+  return "Escaped!";
 }
 
 module.exports = catAndMouse;
