@@ -111,3 +111,19 @@ Then the result is 'Protected!'
 Given a string "mD.C" and jump count 2
 When I check if cat can catch a mouse
 Then the result is 'Protected!'
+
+### US-6
+As a cat
+I want to check if I can catch a mouse when there is no dog between us, and mouse is two jumps ahead
+So that I will know that I can catch the mouse
+
+#### UAT-6.1
+Given a string "C..mD" and jump count 2
+When I check if cat can catch a mouse
+Then the result is 'Caught!'
+
+#### UAT-6.2
+Given a string "m..CD" and jump count 2
+When I check if cat can catch a mouse
+Then the result is 'Caught!'
+
