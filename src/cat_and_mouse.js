@@ -1,17 +1,12 @@
 function catAndMouse(x, j) {
   if (!x.includes("C") && !x.includes("m") && !x.includes("D")) {
     return "boring without all three";
-  } 
-  if (x === "Cm" || x === "mC") {
-    return "Caught!";
   }
-  if ((x === "C.m" || x === "m.C") && j === 1) {
-    return "Caught!";
-  }
-  if (x === "C..m" && (j === 2 || j === 3)) {
-    return "Caught!";
+  if (x.indexOf("C") >  x.indexOf("m")) {
+    return x.indexOf("C") - x.indexOf("m") <= j + 1 ? "Caught!" : "Escaped!";
+  } else {
+    return x.indexOf("m") - x.indexOf("C") <= j + 1 ? "Caught!" : "Escaped!";
   } 
-  return "Escaped!";
 }
 
 module.exports = catAndMouse;
