@@ -5,6 +5,9 @@ function catAndMouse(x, j) {
   if (x === "Cm") {
     return "Caught!";
   }
+  if (x === "mC") {
+    return "Caught!";
+  }
   return "boring without all three"; 
 }
 
