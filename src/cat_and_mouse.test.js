@@ -8,3 +8,8 @@ describe('US-1', () => {
     expect(catAndMouse("...", 0)).toBe("boring without all three");
   });
 });
+describe('US-2', () => {
+  it('Given the string x="Cm", jump j=0 When I check if I can catch a mouse Then the result is "Caught!"', () => {
+    expect(catAndMouse("Cm", 0)).toBe("Caught!");
+  });
+});
