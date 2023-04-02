@@ -5,17 +5,14 @@ function catAndMouse(x, j) {
   if (cat < 0 && mouse < 0 && dog < 0) {
     return "boring without all three";
   }
-  if (dog < 0 && cat > mouse) {
-    if (cat - mouse <= j + 1) {
-        return "Caught!"
-      }    
-  } else if (dog < 0 && cat < mouse) {
-    if (mouse - cat <= j + 1) {
-      return "Caught!"
-    }
-  } 
   if ((dog > cat && dog < mouse) || (dog < cat && dog > mouse)) {
     return 'Protected!';
+  }
+  if (cat > mouse && (cat - mouse <= j + 1)) {
+    return "Caught!"
+  }
+  if (cat < mouse && (mouse - cat <= j + 1)) {
+    return "Caught!"
   }
   return "Escaped!";
 }
