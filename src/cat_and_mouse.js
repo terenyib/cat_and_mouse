@@ -5,10 +5,7 @@ function catAndMouse(x, j) {
   if (x === "Cm" || x === "mC") {
     return "Caught!";
   }
-  if (x === "C.m" && j === 1) {
-    return "Caught!";
-  }
-  if (x === "m.C" && j === 1) {
+  if ((x === "C.m" || x === "m.C") && j === 1) {
     return "Caught!";
   }
   return "Escaped!";
