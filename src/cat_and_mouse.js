@@ -14,7 +14,7 @@ function catAndMouse(x, j) {
       return "Caught!"
     }
   } 
-  if (dog > cat && dog < mouse) {
+  if ((dog > cat && dog < mouse) || (dog < cat && dog > mouse)) {
     return 'Protected!';
   }
   return "Escaped!";
