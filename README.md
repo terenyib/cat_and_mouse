@@ -96,3 +96,18 @@ Then the result is 'Escaped!'
 Given a string "m..C" and jump count 0
 When I check if cat can catch a mouse
 Then the result is 'Escaped!'
+
+### US-5
+As a cat
+I want to check if I can catch a mouse when there is a dog between me and the mouse, and mouse is two jumps ahead
+So that I will know that I can't catch the mouse
+
+#### UAT-5.1
+Given a string "CD.m" and jump count 2
+When I check if cat can catch a mouse
+Then the result is 'Protected!'
+
+#### UAT-5.2
+Given a string "mD.C" and jump count 2
+When I check if cat can catch a mouse
+Then the result is 'Protected!'
