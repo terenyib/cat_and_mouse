@@ -1,11 +1,11 @@
 function catAndMouse(x, j) {
   if (x === "") {
     return "boring without all three";
-  } else if (x === "Cm") {
+  } 
+  if (x === "Cm") {
     return "Caught!";
-  } else {
-    return "boring without all three";
-  }   
+  }
+  return "boring without all three"; 
 }
 
 module.exports = catAndMouse;
